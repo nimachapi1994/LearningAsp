@@ -27,3 +27,8 @@ how to clone from git
 5-git rm --cached {filename}  > remove from cache
 
 git log --oneline -n 5  > بعنی 5 کامیت آخر را نمایش بده
+
+
+
+
+git clone https://github.com/{accountName}/{GitName}.git {url}
