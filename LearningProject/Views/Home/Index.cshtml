@@ -1,8 +1,40 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@model LearningProject.ViewModels.VM_Product
+
+
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">ثبت اطلاعات محصول</div>
+    </div>
+    <div class="card-body">
+        <form action="/Home/InsertProductConfirm" method="post">
+
+            @*<div class="form-group">
+                    <input name="name" class="form-control" placeholder="نام محصول" />
+                </div>
+                <div class="form-group">
+                    <input name="price" class="form-control" placeholder="قیمت محصول" />
+                </div>
+                <div class="form-group">
+                   <textarea class="form-control" name="des" placeholder="توضیحات"></textarea>
+                </div>*@
+
+            <div class="form-group">
+                <input asp-for="Title" class="form-control" placeholder="نام محصول" />
+            </div>
+            <div class="form-group">
+                <input asp-for="price" name="price" class="form-control" placeholder="قیمت محصول" />
+            </div>
+            <div class="form-group">
+                <textarea asp-for="description" class="form-control" name="des" placeholder="توضیحات"></textarea>
+            </div>
+
+
+            <input type="submit" value="ثبت اطلاعات" style="font-family:Tahoma" />
+        </form>
+    </div>
+
 </div>
