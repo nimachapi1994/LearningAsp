@@ -1,0 +1,29 @@
+7- git config --global user.email "email"  git config --global user.name "name"   > config the system user
+
+
+4- git remote add origin https://github.com/{accountName}/{GitName}.git 
+
+5- git push -u origin master  > login to github (email and pass github)  >> push all source project to github repository
+
+6- git pull > update all changes from git repository to your source and local repository
+
+----------------------------------------------------------------------------------------
+how to clone from git
+
+1- git clone https://github.com/{accountName}/{GitName}.git {url}
+
+
+
+
+
+1_git init  create git repository
+
+2_git status
+
+3_git add . (all source ) or git add {filename}
+
+4_Git Commit -a -m  "commit to the repository Message"
+
+5-git rm --cached {filename}  > remove from cache
+
+git log --oneline -n 5  > بعنی 5 کامیت آخر را نمایش بده
